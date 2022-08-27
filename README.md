@@ -1,21 +1,23 @@
-# CSE Microservices Jana Karas
-## Achievements: 
+# Docker Webapp
 
-Everything is done! 
+## Overview 
 
-Details: 
+* Project for university course "Contemporary Software Development" @unibz. 
+* A Webapp composed of microservices. 
+* Each microservices consists of a flask app residing in a Docker container. 
+* Docker-Compose is used to start the app.  
 
-* **Appartments** Microservice: Added the parameter "size" so that the command is */add?name=...&size=...)"*
-* **Appartments** Microservice: Added the functionality to remove an appartment so that the command is */remove?name=...)*
-* Added the **Reserve** Microservice
-* **Reserve** Microservice: Added the functionality to add a reservation so that the command is */add?name=...&start=yyyymmdd&duration=...&vip=1* 
-    + Adding a reservation for a non-existing apartment is blocked
-    + Adding a reservation that conflicts with another reservation is blocked
-* **Reserve** Microservice: Added the functionality to remove a reservation so that the command is */remove?id=...* 
-* **Search** Microservice: Added the functionality to search for appartments so that the command is */search?date=...&duration=...* 
-    + Appartments that are already booked are not shown in the search results
-* Added a **Gateway** Microservice
-* The **Gateway** Microservice forwards the following commands to the right microservices: 
+## Microservices 
+
+* Apartments: Manages a database of registered apartments.
+* Search: Shows available apartments for a specified timeframe.
+* Reserve: Manages reservations, toggles apartments between available and unavailable for specified timeframe. 
+* Gateway: Forwards requests to the correct microservice. 
+
+## Details 
+
+Check out the project on localhost, port 5004. You will be on the homepage.
+This is the **Gateway** Microservice, which forwards the following commands to the right microservices: 
     + /appartments
     + /appartments/appartments
     + /appartments/add
@@ -26,14 +28,6 @@ Details:
     + /reserve/add
     + /reserve/remove
 
-## Ports
-
-| Microservice | Port |
-| ------------ | ------ |
-| Gateway | 5004 |
-| Appartments | 5001 |
-| Search | 5002 |
-| Reserve | 5003 | 
 
 
 
