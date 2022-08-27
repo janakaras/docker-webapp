@@ -17,16 +17,18 @@
 ## Details 
 
 Check out the project on localhost, port 5004. You will be on the homepage.
+
 This is the **Gateway** Microservice, which forwards the following commands to the right microservices: 
-    + /appartments
-    + /appartments/appartments
-    + /appartments/add
-    + /appartments/remove
-    + /search
-    + /reserve
-    + /reserve/reservations
-    + /reserve/add
-    + /reserve/remove
+
+* /appartments
+* /appartments/appartments
+* /appartments/add
+* /appartments/remove
+* /search
+* /reserve
+* /reserve/reservations
+* /reserve/add
+* /reserve/remove
 
 
 
