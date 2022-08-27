@@ -30,7 +30,7 @@ This is the **Gateway** Microservice, which forwards the following commands to t
 * /reserve/add
 * /reserve/remove
 
-
+Feel free to also check out the repository "docker-in-the-cloud" which used this webapp as a basis for a project using AWS. 
 
 
 
